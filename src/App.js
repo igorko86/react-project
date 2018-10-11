@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+
+import Header from './components/header_footer/Header';
 import Contents from './components/content/Contents';
 import ContentsInfo from './components/ContentsInfo';
-import Header from './components/header_footer/Header'
+import Footer from './components/footer/Footer';
+
 class App extends Component {
   render() {
     return (
@@ -10,6 +13,7 @@ class App extends Component {
         <div className="header-background"></div>
         <Header ></Header>
         <Contents contents={ContentsInfo}></Contents>
+        <Footer />
       </div>
     );
   }

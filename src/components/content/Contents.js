@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import HeaderContent from './HeaderContent'
-import ContentItem from './ContentItem'
+import ContentItem from './ContentItem';
+import './contents.css';
 
 export default class Content extends Component{
 
@@ -12,7 +13,7 @@ export default class Content extends Component{
     const {contents} = this.props;
 
     return(
-      <div className="rty">
+      <div className="contents">
         <HeaderContent  contents = {contents} toggleContent = {this.toggleContent}></HeaderContent>
         <ContentItem isOpen = {this.state.isOpen} contentsItem={contents}/>
       </div>

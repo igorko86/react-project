@@ -11,7 +11,8 @@ export default function HeaderContent(props){
           key={content.id}
           onClick={props.toggleContent(content.id)}
           >
-          <img className="iconImg" src={content.icon} />
+          <img className="iconImg" src={content.icon} alt={content.alt} />
+
         </div>)
       }
     </div>
