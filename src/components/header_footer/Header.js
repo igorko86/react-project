@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import  '../../css/header.css'
+import  './header.css'
 import Logo from '../.././img/Ivanichi-Logo.png';
 
 import SideDrawer from './SideDrawer';
@@ -21,12 +21,10 @@ class Header extends Component {
   }
   handleScroll=()=>{
     if(window.scrollY>0){
-      console.log("y");
       this.setState({
         headerShow: true
       })
     }else{
-      console.log("n");
       this.setState({
         headerShow: false
       })
@@ -42,11 +40,11 @@ class Header extends Component {
 
           <AppBar
             position="fixed"
-            style={{maxWidth: "980px",position:"fixed ",right: "auto",background:this.state.headerShow?"#2f2f2f":"transparent",
+            style={{background:this.state.headerShow?"#2f2f2f":"transparent",
 
                     color: this.state.headerShow?"white":"black",
                     boxShadow:"none",
-                    padding:"10px"}}
+                    padding:"20px"}}
           >
             <Toolbar>
               <div className="header_logo">

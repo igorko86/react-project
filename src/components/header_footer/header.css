@@ -8,11 +8,12 @@
   display: flex;
 }
 .img_logo{
-  width: 59px;
+  width: 60px;
   margin-right: 12px;
 }
 .h1_Logo{
   margin-top: 30px;
+
 }
 .font_righteous{
   font-family: "Righteous", cursive;

@@ -1,16 +1,13 @@
 .main{
-  max-width: 980px;
+  width: 100%;
   height: 1000px;
   margin:0 auto;
   padding: 1px;
   position: relative;
-  border: 1px solid red;
-
 }
 .header-background{
   height: 400px;
-
-  background:url("./img/Ivanichi-zavod.jpg") no-repeat;
+  background:url("./img/прапори_центр.jpg") no-repeat;
   background-position: center;
-   background-size: cover;
+  background-size: cover;
 }
