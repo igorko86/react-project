@@ -1,0 +1,24 @@
+
+.header_logo{
+  width: 100%;
+
+}
+.wraper_logo{
+  height: 80px;
+  display: flex;
+}
+.img_logo{
+  width: 60px;
+  margin-right: 12px;
+}
+.h1_Logo{
+  margin-top: 30px;
+
+}
+.font_righteous{
+  font-family: "Righteous", cursive;
+}
+
+.icon_menu{
+  float:right;
+}
