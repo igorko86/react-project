@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import './footer.css';
 
 export default class FormComment extends Component{
   state={
@@ -17,7 +17,7 @@ export default class FormComment extends Component{
     })
   }
   handleAddComment=()=>{
-
+    if(this.state.text.length === 0 || this.state.user.length === 0 ){return}
     const newComment={
       text:this.state.text,
       user:this.state.user,
@@ -35,13 +35,20 @@ export default class FormComment extends Component{
   render(){
 
     return(
-      <div>
-          <input type="text" value={this.state.user} onChange={this.handleUser} />
-          <textarea type="text"
+      <div className="wraper_form">
+          <label>Ім'я:
+            <input className="footer_input"
+                   type="text"
+                   placeholder="Введіть ім'я"
+                   value={this.state.user}
+                   onChange={this.handleUser}
+             />
+          </label>
+          <textarea className="footer_textarea" type="text"
             rows={6}
              cols={43}
              value={this.state.text}
-            placeholder="Enter your Note..."
+            placeholder="Введіть Ваш коментар..."
             onChange={this.handleText}
           />
           <button onClick={this.handleAddComment}>Відправити</button>

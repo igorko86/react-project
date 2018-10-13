@@ -2,6 +2,8 @@ import React,{Component} from 'react';
 import Location from './Location'
 import FormComment from './FormComment';
 import Comments from './Comments';
+import "./footer.css"
+
 export default class Footer extends Component{
   state={
     comments:[]
@@ -19,8 +21,10 @@ export default class Footer extends Component{
     return(
       <div className="footer">
         <Comments comments={this.state.comments} />
-        <FormComment onAddComment={this.handleAddComment} />
-        <Location />
+        <div className="wraper_Form_Location">
+          <FormComment onAddComment={this.handleAddComment} />
+          <Location />
+        </div>
       </div>
     )
   }

@@ -1,0 +1,39 @@
+
+.footer{
+  margin: 20px 5px 0 5px;
+  border: 1px solid #8B8989;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #8B8989;
+  background-color: #E0FFFF;
+}
+.wraper_Form_Location{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.wraper_comments{
+  margin: 5px;
+  border: 1px solid #8B8989;
+}
+.comments_h4{
+  display: inline;
+  margin-left: 5px;
+  border-bottom: 1px solid black;
+}
+.comments_p{
+  margin-left: 5px;
+
+}
+.wraper_form{
+  width: 40%;
+}
+.footer_textarea{
+  width:100%;
+}
+.footer_input{
+  width:40%;
+  margin-bottom: 5px;
+}
+.wraper_map{
+  width: 55%;
+}
