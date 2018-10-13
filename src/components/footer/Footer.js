@@ -4,15 +4,16 @@ import FormComment from './FormComment';
 import Comments from './Comments';
 export default class Footer extends Component{
   state={
-    comments:[{id:1,
-              user:"vasya",
-              text:"удалятся та li, в которой эта кнопочка находится."
-            }]
+    comments:[]
   }
-  handleAddComment=(noteNew)=>{
+  handleAddComment=(commentNew)=>{
     this.setState({
-      comments:[...this.state.comments,noteNew]
+      comments:[...this.state.comments,commentNew]
     })
+  }
+  saveLocalStorage=()=>{
+    const comments = JSON.stringify(this.state.comments);
+    localStorage.setItem("comments",comments)
   }
   render(){
     return(
@@ -20,8 +21,18 @@ export default class Footer extends Component{
         <Comments comments={this.state.comments} />
         <FormComment onAddComment={this.handleAddComment} />
         <Location />
-
       </div>
     )
+  }
+  componentDidMount(){
+    const comments = JSON.parse(localStorage.getItem("comments"));
+    if(comments){
+      this.setState({
+        comments: comments
+      })
+    }
+  }
+  componentDidUpdate(prevProps,prevState){
+    if(prevState !== this.state.comments)this.saveLocalStorage();
   }
 }

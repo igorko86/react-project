@@ -17,6 +17,7 @@ export default class FormComment extends Component{
     })
   }
   handleAddComment=()=>{
+
     const newComment={
       text:this.state.text,
       user:this.state.user,
