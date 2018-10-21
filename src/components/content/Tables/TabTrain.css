@@ -1,0 +1,14 @@
+.wraper-table {
+    min-width: 100%;
+    overflow: auto;
+}
+.table{
+  min-width: 960px;
+  margin: 20px auto;
+}
+.table th,td{
+  height: 40px;
+}
+.table td{
+  text-align: center;
+}

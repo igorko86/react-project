@@ -11,8 +11,10 @@ const SideDrawer = (props)=>{
         onClose={()=>props.onClose(false)} >
         <List component="nav">
           <ListItem button onClick={()=>console.log("faia")}>
-            startascas ascsa as
-
+            Головна
+          </ListItem>
+          <ListItem button onClick={()=>console.log("faia")}>
+            Контакти
           </ListItem>
         </List>
       </Drawer>

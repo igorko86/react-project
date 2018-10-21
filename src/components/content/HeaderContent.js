@@ -1,26 +1,22 @@
 import React from 'react'
 import './headerContent.css'
-import ToolTip from './ToolTip'
+
+
 export default function HeaderContent(props){
-  console.log(props.contents)
+  const {onOpenTab,contents,active} = props;
+  const buttons = contents.map(content=>(
+        <div
+          className = {(active===content.id-1)?"header_btn active":"header_btn"}
+          key={content.id}
+          onClick={()=>onOpenTab(content.id)}
+        >
+          <img className="iconImg" src={content.icon} alt={content.alt} />
+        </div>
+
+    ))
   return(
     <div className="header_content">
-
-        {props.contents.map(content=>(
-
-              <div
-                className="header_btn"
-                key={content.id}
-                onClick={props.toggleContent(content.id)}
-              >
-
-                <ToolTip text={content.ToolTip}>
-                    <img className="iconImg" src={content.icon} alt={content.alt} />
-                </ToolTip>
-              </div>
-
-          ))
-        }
+        { buttons }
     </div>
   )
 }

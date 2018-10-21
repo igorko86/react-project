@@ -7,7 +7,7 @@
   align-items: center;
 }
 .header_btn{
-  max-width:8%;
+  width: 50px;
   margin: 2%;
   padding:20px;
   cursor: pointer;
@@ -15,11 +15,15 @@
   border-radius: 200px;
   box-shadow: 0 0 30px #484763;
 }
+.header_btn.active{
+  background:#61676f;
+  box-shadow: 0 0 0px #484763;
+}
 .header_btn:hover{
   background:#61676f;
   box-shadow: 0 0 0px #484763;
 }
 
 .iconImg{
-  width:95%;
+  width: 93%;
 }
