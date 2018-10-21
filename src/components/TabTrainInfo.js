@@ -5,6 +5,6 @@ export default  [
               {id:3,name:"Київ → Львів",way:"toLviv"},
               {id:2,name:"Червоноград → Ковель",way:"toKovel"},
               {id:5,name:"Червоноград → Ковель",way:"toKovel"},
-              {id:6,name:"Львов → Ковель",way:"toKovel"},
-              {id:7,name:"Львов → Киев",way:"toKovel"}
+              {id:6,name:"Львів → Ковель",way:"toKovel"},
+              {id:7,name:"Львів → Київ",way:"toKovel"}
               ]
